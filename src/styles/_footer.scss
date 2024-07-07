@@ -1,0 +1,50 @@
+.footer {
+    margin: 32px auto;
+
+    h1 {
+        border-bottom: $borderBottomColor 10px solid;
+    }
+    
+    p {
+        font-size: 1rem;
+        color: #cccccc;
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .footer {
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            padding: 0px 20px;
+        }
+        
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1rem;
+            padding: 0px 20px;
+        }
+        
+        p {
+            font-size: 0.7rem;
+        }
+    }
+}

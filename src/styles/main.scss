@@ -1,0 +1,132 @@
+@import 'variables';
+@import 'hero';
+@import 'contentpage';
+@import 'footer';
+
+@font-face {
+    font-family: 'Futura Display';
+    src: url(../../assets/fonts/Futura\ Display.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Futura Display', sans-serif;
+}
+
+body {
+    background-color: $landingpageBackgroundColor;
+    
+    
+    .container {
+        max-width: 1366px;
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: $titleColor;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-top: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    
+    text-shadow: 
+        -2px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+        
+    
+}
+
+h2 {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    color: $paragraphColor;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 
+        -2px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000; 
+}
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+    color: $paragraphColor;
+
+}
+
+span {
+    color: #fff300;
+    text-shadow: 
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000; 
+    }
+
+    .contentpage__text--button {
+    font-size: 2.5rem;
+    background-color: $buttonColor;
+    color: $paragraphColor;
+    border: 2px solid $borderButtonColor;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-shadow: 
+        -2px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.contentpage__text--button.active {
+    font-size: 2.5rem;
+    background-color: $buttonColorActive;
+    color: $paragraphColor;
+    border: 2px solid $borderButtonColor;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-shadow: 
+        -2px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+}
+
+.contentpage__text--button:hover {
+    font-size: 2.5rem;
+    background-color: $buttonColorActive;
+    color: $paragraphColor;
+    border: 2px solid $borderButtonColor;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-shadow: 
+        -2px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+}
+
+@media screen and (max-width: 767px){
+    .contentpage__text--button {
+        font-size: 1.5rem;
+        padding: 5px 10px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+}

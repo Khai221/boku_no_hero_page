@@ -1,0 +1,102 @@
+@import 'variables';
+
+.hero {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1920px;
+    width: 100%;
+    margin: 12px auto;
+
+    h1 {
+        border-bottom: 10px solid #e50009;
+    }
+
+    
+   
+    &__image {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 0px;
+
+        &__brand {
+            max-width: 800px;
+            max-height: 600px;
+            margin-right: 2rem;
+        }
+    
+        &__characters {
+            max-width: 1000px;
+            border-radius: 10px;
+            box-shadow: #000 0px 0px 10px;
+            border-bottom: 10px solid #144636;
+        }
+    }
+
+    &__text {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: $borderBottomColor 10px solid;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+   .hero {
+    max-width: 1024px;
+    
+    &__image {
+        flex-direction: column;
+        align-items: center;
+        
+
+        &__brand {
+            max-width: 700px;
+            max-height: 500px;
+            margin: 0 auto;
+        }
+    
+        &__characters {
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: #000 0px 0px 10px;
+            border-bottom: 10px solid #144636;
+            margin: 0 auto;
+        }
+    }
+
+   } 
+}
+
+@media screen and (max-width: 767px) {
+    .hero {
+        max-width: 767px;
+        
+        &__image {
+            flex-direction: column;
+            align-items: center;
+            
+    
+            &__brand {
+                max-width: 350px;
+                max-height: 300px;
+                margin: 0 auto;
+            }
+        
+            &__characters {
+                max-width: 350px;
+                border-radius: 10px;
+                box-shadow: #000 0px 0px 10px;
+                border-bottom: 10px solid #144636;
+                margin: 0 auto;
+            }
+        }
+    
+       } 
+}
